@@ -45,8 +45,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $mail->isSMTP();
                 $mail->Host       = 'smtp.gmail.com';
                 $mail->SMTPAuth   = true;
-                $mail->Username   = 'leonardjjmhone@gmail.com';   // Replace with your Gmail
-                $mail->Password   = 'ehyq hbtt vcir easb';      // Replace with App Password
+                $mail->Username   = '';   // Replace with your Gmail
+                $mail->Password   = '';      // Replace with App Password
                 $mail->SMTPSecure = 'tls';
                 $mail->Port       = 587;
 
@@ -269,3 +269,4 @@ document.addEventListener("DOMContentLoaded", () => {
 </script>
 </body>
 </html>
+
