@@ -1,0 +1,14 @@
+# Enable mod_rewrite
+RewriteEngine On
+
+# Redirect /register to index.php
+RewriteRule ^register/?$ index.php [L]
+
+# Remove .php extension from all PHP files
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [L]
+
+# Optional: Force HTTPS (if you have SSL)
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
