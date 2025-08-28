@@ -51,8 +51,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $mail->Port       = 587;
 
                 // Recipients
-                $mail->setFrom('leonardjjmhone@gmail.com','ITEC ICT E SOLUTIONS');
-                $mail->addAddress('leonardjjmhone@gmail.com','ITEC Admin'); // admin
+                $mail->setFrom('email@gmail.com','ITEC ICT E SOLUTIONS');
+                $mail->addAddress('email@gmail.com','ITEC Admin'); // admin
                 $mail->addAddress($_POST['email'], $_POST['name']); // applicant copy
 
                 // Attach uploaded proof
@@ -269,4 +269,5 @@ document.addEventListener("DOMContentLoaded", () => {
 </script>
 </body>
 </html>
+
 
